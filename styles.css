@@ -1,0 +1,158 @@
+/* -------------------- Estilização Geral -------------------- */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/tecnolgia.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Adiciona um gradiente na imagem de fundo para melhorar o contraste */
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    z-index: -1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+/* -------------------- Estilização do Cabeçalho -------------------- */
+header {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* -------------------- Navegação -------------------- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------- Estilização do Conteúdo Principal -------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* -------------------- Estilização da Programação -------------------- */
+.programacao-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------- Estilização dos Eventos -------------------- */
+.evento {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    /* Espaçamento entre os eventos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.evento h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    /* Destaque para o título do evento */
+}
+
+.evento p {
+    margin: 5px 0;
+    color: #ccc;
+    /* Cor do texto padrão */
+}
+
+/* -------------------- Responsividade -------------------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .evento {
+        padding: 15px;
+        /* Ajusta o padding para telas menores */
+    }
+}
