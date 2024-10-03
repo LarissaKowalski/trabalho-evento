@@ -93,19 +93,22 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Estilização da programação */
-.programacao-container {
-    width: 100%;
-    /* Faz a programação ocupar toda a largura do container */
-    max-width: 800px;
-    /* Limita a largura máxima da programação */
-    margin-top: 20px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    /* Fundo semi-transparente */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.programacao h2 {
+    background-color: rgba(255, 0, 0, 0.4); /* Cor de fundo para o título */
+    color: #fff; /* Cor do texto do título */
+    padding: 10px; /* Espaçamento interno para o título */
+    border-radius: 5px; /* Bordas arredondadas no título */
+    text-align: center; /* Centralizar o título */
 }
+
+.programacao .evento:first-child {
+    background-color: rgba(255, 0, 0, 0.4); /* Cor de fundo para o primeiro card */
+    color: #fff; /* Cor do texto do primeiro card */
+    border: 2px solid #ff0000; /* Borda vermelha para o primeiro card */
+    padding: 10px; /* Espaçamento interno no primeiro card */
+    border-radius: 5px; /* Bordas arredondadas no primeiro card */
+}
+
 
 .evento {
     background-color: rgba(255, 255, 255, 0.2);
@@ -115,6 +118,11 @@ main {
     margin-bottom: 20px;
     /* Espaçamento entre os eventos */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.evento:first-child {
+    background-color: rgba(255, 0, 0, 0.4); /* Cor de fundo vermelha com transparência */
+    color: #fff; /* Cor do texto */
+    border: 2px solid #ff0000; /* Borda vermelha para destaque */
 }
 
 .evento h3 {
@@ -169,28 +177,27 @@ main {
 
 
 .palestrante {
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    /* Fundo dos palestrantes - mantido com transparência */
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background-color: rgba(30, 30, 30, 0.8); /* Cor de fundo mais escura */
+    color: white; /* Cor do texto para contraste */
+    border-radius: 8px; /* Arredondar os cantos do card */
+    padding: 20px; /* Espaçamento interno */
+    margin: 15px 0; /* Margem entre os cards */
+    display: flex; /* Flexbox para alinhar imagem e informações */
+    align-items: center; /* Centralizar verticalmente */
+    transition: transform 0.3s; /* Efeito de transição ao passar o mouse */
 }
 
 .palestrante:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumentar o card ao passar o mouse */
 }
 
 .palestrante img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    object-fit: cover;
+    border-radius: 50%; /* Tornar a imagem circular */
+    margin-right: 20px; /* Espaçamento entre imagem e texto */
+    width: 100px; /* Tamanho da imagem */
+    height: 100px; /* Tamanho da imagem */
 }
+
 
 .palestrante-info {
     flex: 1;
@@ -531,7 +538,7 @@ option {
 }
 
 .contato-form button {
-    background-color: #3498db;
+    background-color: #030405;
     /* Cor do botão de envio */
     color: #fff;
     /* Texto branco */
@@ -550,7 +557,7 @@ option {
 }
 
 .contato-form button:hover {
-    background-color: #2980b9;
+    background-color: #05080a;
     /* Fundo mais escuro ao passar o mouse */
 }
 
@@ -558,7 +565,7 @@ option {
 .container p a {
     color: #ffffff;
     /* Altere para a cor desejada */
-    background-color: #007bff;
+    background-color: #101418;
     /* Cor de fundo para destaque */
     padding: 5px 10px;
     /* Espaço ao redor do texto */
@@ -569,22 +576,32 @@ option {
 }
 
 .container p a:hover {
-    background-color: #0056b3;
+    background-color: #0e131a;
     /* Cor de fundo ao passar o mouse */
     color: #ffffff;
     /* Mantém o texto branco ao passar o mouse */
 }
+
 .card {
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com leve transparência */
-    color: white; /* Cor do texto em branco para contraste */
-    border: 1px solid #ddd; /* Borda suave */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 20px; /* Preenchimento interno */
-    margin: 10px 0; /* Espaçamento vertical entre cards */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra mais escura para um efeito mais forte */
-    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo preto com leve transparência */
+    color: white;
+    /* Cor do texto em branco para contraste */
+    border: 1px solid #ddd;
+    /* Borda suave */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    padding: 20px;
+    /* Preenchimento interno */
+    margin: 10px 0;
+    /* Espaçamento vertical entre cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    /* Sombra mais escura para um efeito mais forte */
+    transition: background-color 0.3s ease;
+    /* Transição suave na mudança de cor */
 }
 
 .card:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Destaque ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Destaque ao passar o mouse */
 }
