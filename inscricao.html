@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inscrição para o Festival de Tecnologia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="palestrantes.html">Palestrantes</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Inscrição para o Festival de Tecnologia</h1>
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+
+            <label for="evento">Selecione o Evento:</label>
+            <select id="evento" required>
+                <option value="">- Selecione um evento -</option>
+                <option value="workshop_web">Workshop de Desenvolvimento Web - 12 de Novembro, 10:00 - 12:00</option>
+                <option value="palestra_ia">Palestra: O Futuro da Inteligência Artificial - 12 de Novembro, 13:00 - 14:30</option>
+                <option value="painel_inovacao">Painel de Discussão: Inovação em Startups - 12 de Novembro, 15:00 - 17:00</option>
+                <option value="hackathon">Hackathon: Criando Soluções para o Futuro - 13 de Novembro, 09:00 - 17:00</option>
+            </select>
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 Festival de Tecnologia</p>
+    </footer>
+</body>
+</html>
