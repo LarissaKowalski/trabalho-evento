@@ -311,12 +311,14 @@ main {
     }
 
     .evento {
-        background-color: rgba(255, 255, 255, 0.3); /* Fundo um pouco mais claro */
+        background-color: rgba(255, 255, 255, 0.3);
+        /* Fundo um pouco mais claro */
         border-radius: 10px;
         padding: 20px;
         margin-bottom: 20px;
-        color: #fff; /* Texto mais claro */
-    }    
+        color: #fff;
+        /* Texto mais claro */
+    }
 
     .palestrante {
         flex-direction: column;
@@ -327,24 +329,34 @@ main {
         margin-bottom: 15px;
     }
 }
+
 /* Adicionando a imagem de fundo */
 body {
-    background-image: url('assets/tecnolgia.png'); /* Caminho da imagem de fundo */
-    background-size: cover; /* Cobre toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    color: #fff; /* Cor do texto em branco */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove padding padrão */
-    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    background-image: url('assets/tecnolgia.png');
+    /* Caminho da imagem de fundo */
+    background-size: cover;
+    /* Cobre toda a tela */
+    background-position: center;
+    /* Centraliza a imagem */
+    color: #fff;
+    /* Cor do texto em branco */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove padding padrão */
+    font-family: Arial, sans-serif;
+    /* Define uma fonte padrão */
 }
 
 .container {
     position: relative;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro com transparência */
     border-radius: 10px;
     max-width: 600px;
-    margin: 50px auto; /* Centraliza a div com margens */
+    margin: 50px auto;
+    /* Centraliza a div com margens */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -352,82 +364,227 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    text-align: center; /* Centraliza o título */
+    text-align: center;
+    /* Centraliza o título */
 }
 
 form {
     display: flex;
-    flex-direction: column; /* Alinha os elementos verticalmente */
+    flex-direction: column;
+    /* Alinha os elementos verticalmente */
 }
 
 label {
-    margin-bottom: 5px; /* Espaçamento abaixo dos rótulos */
-    font-weight: bold; /* Destaque nos rótulos */
+    margin-bottom: 5px;
+    /* Espaçamento abaixo dos rótulos */
+    font-weight: bold;
+    /* Destaque nos rótulos */
 }
 
-input, select {
-    padding: 10px; /* Espaçamento interno */
-    margin-bottom: 15px; /* Espaçamento entre os campos */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
-    color: #fff; /* Texto branco */
-    font-size: 1rem; /* Tamanho da fonte */
-    transition: background-color 0.3s; /* Suave transição de fundo */
+input,
+select {
+    padding: 10px;
+    /* Espaçamento interno */
+    margin-bottom: 15px;
+    /* Espaçamento entre os campos */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fundo semi-transparente */
+    color: #fff;
+    /* Texto branco */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    transition: background-color 0.3s;
+    /* Suave transição de fundo */
 }
 
-input:focus, select:focus {
-    outline: none; /* Remove a borda de foco padrão */
-    background-color: rgba(255, 255, 255, 0.4); /* Fundo mais claro ao focar */
+input:focus,
+select:focus {
+    outline: none;
+    /* Remove a borda de foco padrão */
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Fundo mais claro ao focar */
 }
 
 button[type="submit"] {
-    background-color: #3498db; /* Cor do botão de inscrição */
-    color: #fff; /* Texto branco */
-    padding: 10px 20px; /* Espaçamento do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
-    font-size: 1.2rem; /* Tamanho da fonte do botão */
-    transition: background-color 0.3s ease; /* Transição suave para o fundo */
-    margin-top: 10px; /* Espaço acima do botão */
+    background-color: #3498db;
+    /* Cor do botão de inscrição */
+    color: #fff;
+    /* Texto branco */
+    padding: 10px 20px;
+    /* Espaçamento do botão */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    font-size: 1.2rem;
+    /* Tamanho da fonte do botão */
+    transition: background-color 0.3s ease;
+    /* Transição suave para o fundo */
+    margin-top: 10px;
+    /* Espaço acima do botão */
 }
 
 button[type="submit"]:hover {
-    background-color: #2980b9; /* Fundo mais escuro ao passar o mouse */
+    background-color: #2980b9;
+    /* Fundo mais escuro ao passar o mouse */
 }
 
 footer {
-    text-align: center; /* Centraliza o texto do rodapé */
-    margin-top: 20px; /* Espaçamento acima do rodapé */
+    text-align: center;
+    /* Centraliza o texto do rodapé */
+    margin-top: 20px;
+    /* Espaçamento acima do rodapé */
 }
 
 /* Responsividade da aba de inscrição */
 @media (max-width: 768px) {
     .container {
-        padding: 15px; /* Reduz o padding em telas menores */
-        margin: 20px auto; /* Ajusta margens em telas menores */
+        padding: 15px;
+        /* Reduz o padding em telas menores */
+        margin: 20px auto;
+        /* Ajusta margens em telas menores */
     }
 
     h1 {
-        font-size: 2rem; /* Tamanho do título menor em telas pequenas */
+        font-size: 2rem;
+        /* Tamanho do título menor em telas pequenas */
     }
 
-    input, select {
-        font-size: 0.9rem; /* Tamanho da fonte menor em telas pequenas */
+    input,
+    select {
+        font-size: 0.9rem;
+        /* Tamanho da fonte menor em telas pequenas */
     }
 
     button[type="submit"] {
-        font-size: 1rem; /* Tamanho do botão menor em telas pequenas */
+        font-size: 1rem;
+        /* Tamanho do botão menor em telas pequenas */
     }
 }
+
 select {
-    color: #000; /* Define a cor do texto das opções como preto */
-    background-color: rgba(255, 255, 255, 0.2); /* Mantém o fundo semi-transparente */
+    color: #000;
+    /* Define a cor do texto das opções como preto */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Mantém o fundo semi-transparente */
 }
 
 /* Para garantir que o texto da opção seja visível */
 option {
-    color: #000; /* Cor do texto das opções no menu suspenso */
-    background-color: #fff; /* Fundo branco para as opções */
+    color: #000;
+    /* Cor do texto das opções no menu suspenso */
+    background-color: #fff;
+    /* Fundo branco para as opções */
+}
+
+/* Adicione isto ao seu arquivo styles.css */
+
+/* Estilização da aba de contato */
+.contato-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
+    /* Centraliza a aba */
+}
+
+/* Estilização dos campos do formulário */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    /* Alinha os campos verticalmente */
+}
+
+.contato-form label {
+    margin-bottom: 5px;
+    /* Espaçamento abaixo dos rótulos */
+    font-weight: bold;
+    /* Destaque nos rótulos */
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 10px;
+    /* Espaçamento interno */
+    margin-bottom: 15px;
+    /* Espaçamento entre os campos */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fundo semi-transparente */
+    color: #fff;
+    /* Texto branco */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+}
+
+.contato-form button {
+    background-color: #3498db;
+    /* Cor do botão de envio */
+    color: #fff;
+    /* Texto branco */
+    padding: 10px 20px;
+    /* Espaçamento do botão */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre o botão */
+    font-size: 1.2rem;
+    /* Tamanho da fonte do botão */
+    transition: background-color 0.3s ease;
+    /* Transição suave para o fundo */
+}
+
+.contato-form button:hover {
+    background-color: #2980b9;
+    /* Fundo mais escuro ao passar o mouse */
+}
+
+/* Estilo para o e-mail e telefone */
+.container p a {
+    color: #ffffff;
+    /* Altere para a cor desejada */
+    background-color: #007bff;
+    /* Cor de fundo para destaque */
+    padding: 5px 10px;
+    /* Espaço ao redor do texto */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    text-decoration: none;
+    /* Remove o sublinhado */
+}
+
+.container p a:hover {
+    background-color: #0056b3;
+    /* Cor de fundo ao passar o mouse */
+    color: #ffffff;
+    /* Mantém o texto branco ao passar o mouse */
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com leve transparência */
+    color: white; /* Cor do texto em branco para contraste */
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+    margin: 10px 0; /* Espaçamento vertical entre cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra mais escura para um efeito mais forte */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Destaque ao passar o mouse */
 }
