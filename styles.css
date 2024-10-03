@@ -1,4 +1,4 @@
-/* -------------------- Estilização Geral -------------------- */
+/* Estilização geral */
 .background-image {
     position: fixed;
     top: 0;
@@ -32,14 +32,12 @@ body {
     background-color: #1a1a1a;
 }
 
-/* -------------------- Estilização do Cabeçalho -------------------- */
 header {
     background-color: rgba(51, 51, 51, 0.9);
     color: #fff;
     padding: 10px 0;
 }
 
-/* -------------------- Navegação -------------------- */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -66,12 +64,13 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* -------------------- Estilização do Conteúdo Principal -------------------- */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Centraliza os itens horizontalmente */
     justify-content: center;
+    /* Centraliza os itens verticalmente */
     text-align: center;
     flex: 1;
     padding: 20px;
@@ -94,23 +93,26 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* -------------------- Estilização da Programação -------------------- */
+/* Estilização da programação */
 .programacao-container {
     width: 100%;
+    /* Faz a programação ocupar toda a largura do container */
     max-width: 800px;
+    /* Limita a largura máxima da programação */
     margin-top: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
+    /* Fundo semi-transparente */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* -------------------- Estilização dos Eventos -------------------- */
 .evento {
     background-color: rgba(255, 255, 255, 0.2);
+    /* Fundo dos eventos - mantido com transparência */
     border-radius: 10px;
     padding: 20px;
-    margin: 20px 0;
+    margin-bottom: 20px;
     /* Espaçamento entre os eventos */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -118,8 +120,8 @@ main {
 .evento h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #ffcc00;
-    /* Destaque para o título do evento */
+    color: #ccc;
+    /* Alterado para cinza */
 }
 
 .evento p {
@@ -128,7 +130,164 @@ main {
     /* Cor do texto padrão */
 }
 
-/* -------------------- Responsividade -------------------- */
+.evento ul {
+    list-style-type: none;
+    /* Remove as bolinhas da lista */
+    padding: 0;
+    /* Remove padding da lista */
+}
+
+.evento ul li {
+    margin: 3px 0;
+    /* Espaçamento entre os itens da lista */
+}
+
+.palestrantes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-image: url('assets/tecnologia.png');
+    /* Caminho para a imagem de fundo */
+    background-size: cover;
+    /* Faz a imagem cobrir todo o espaço */
+    background-position: center;
+    /* Centraliza a imagem */
+    opacity: 0.9;
+    /* Ajuste a opacidade, se necessário */
+}
+
+/* Para garantir que o fundo da página principal não afete a aba de palestrantes */
+.main-background {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Adiciona um fundo escuro com transparência */
+    min-height: 100vh;
+    /* Certifique-se de que a altura mínima seja 100% da viewport */
+    padding: 20px;
+}
+
+
+.palestrante {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fundo dos palestrantes - mantido com transparência */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.palestrante:hover {
+    transform: scale(1.05);
+}
+
+.palestrante img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.palestrante-info {
+    flex: 1;
+}
+
+/* Separação do nome do palestrante e o resumo */
+.palestrante-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.palestrante-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ddd;
+    /* Alterado para uma cor mais clara */
+}
+
+/* Estilo do botão do LinkedIn */
+.palestrante-info .btn {
+    display: inline-block;
+    background-color: #0077b5;
+    /* Azul padrão do LinkedIn */
+    color: #fff;
+    padding: 12px 25px;
+    /* Ajuste o padding para um botão mais agradável */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transição suave */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+}
+
+.palestrante-info .btn:hover {
+    background-color: #005f8c;
+    /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito de elevação ao passar o mouse */
+}
+
+/* Botões de chamada para ação na tela inicial */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons .btn {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo preto com um pouco de transparência */
+    color: #fff;
+    /* Texto branco */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    /* Remove qualquer borda padrão */
+}
+
+.cta-buttons .btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fundo branco semi-transparente ao passar o mouse */
+}
+
+.btn-inscricao {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-inscricao:hover {
+    background-color: #2980b9;
+}
+
+.btn {
+    background-color: #ff9800;
+    /* Cor semelhante ao botão de inscrição */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+
+/* Responsividade */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -152,7 +311,19 @@ main {
     }
 
     .evento {
-        padding: 15px;
-        /* Ajusta o padding para telas menores */
+        background-color: rgba(255, 255, 255, 0.3); /* Fundo um pouco mais claro */
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        color: #fff; /* Texto mais claro */
+    }    
+
+    .palestrante {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .palestrante img {
+        margin-bottom: 15px;
     }
 }
